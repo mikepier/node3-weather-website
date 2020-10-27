@@ -24,12 +24,12 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
-const footerText = 'Copyright by Misio, 2020'
+const footerText = 'Copyright by mikepier, 2020'
 
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Misio Pysio',
+        name: 'mikepier',
         footer: footerText,
     })
 })
@@ -37,7 +37,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
-        name: 'Misio Pysio',
+        name: 'mikepier',
         footer: footerText,
     })
 })
